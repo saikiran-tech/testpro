@@ -18,8 +18,8 @@ from django.urls import path,include
 from rest_framework import routers
 from jsonapp import views
 router = routers.DefaultRouter()
-router.register('/users/', views.UserView)
-router.register('activity',views.ActivityView)
+router.register('users/', views.UserView)
+router.register('activity/',views.ActivityView)
 urlpatterns = [
     path('', include(router.urls))
 ]
